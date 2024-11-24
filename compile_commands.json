@@ -1,0 +1,56 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-g",
+      "-c",
+      "-o",
+      "obj/lexer/tokenizer.o",
+      "src/lexer/tokenizer.cpp"
+    ],
+    "directory": "/Users/sally/devel/storylang",
+    "file": "/Users/sally/devel/storylang/src/lexer/tokenizer.cpp",
+    "output": "/Users/sally/devel/storylang/obj/lexer/tokenizer.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-g",
+      "-c",
+      "-o",
+      "obj/fileutils.o",
+      "src/fileutils.cpp"
+    ],
+    "directory": "/Users/sally/devel/storylang",
+    "file": "/Users/sally/devel/storylang/src/fileutils.cpp",
+    "output": "/Users/sally/devel/storylang/obj/fileutils.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-g",
+      "-c",
+      "-o",
+      "obj/main.o",
+      "src/main.cpp"
+    ],
+    "directory": "/Users/sally/devel/storylang",
+    "file": "/Users/sally/devel/storylang/src/main.cpp",
+    "output": "/Users/sally/devel/storylang/obj/main.o"
+  }
+]

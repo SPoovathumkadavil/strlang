@@ -1,0 +1,35 @@
+
+reserved keywords (ingrained) :
+
+.begin    :- begin section identifier
+	- .begin [type] [identifier]
+	- chapter :- "namespace" that can be imported separetely to other part of file
+	- stage   :- a "function"
+.end      :- end section identifier
+	- .end [identifier]
+.import   :- import a chapter from a file
+.define   :- define variable identifier (inner stage definitions are ported to .local)
+	- .define [identifier] [type] [value]
+.local    :- inner stage variable storage
+.oneof    :- typedef one of definite iterable type
+.iterable :- convert type into an iterable form if applied
+.out      :- output a string into stdout
+.branch   :- branch command
+	- .branch : equal? to?
+.compare  :- returns whether two values are the same
+
+reserved types (ingrained) :
+
+.integer   :- int type
+.decimal   :- floating point type
+.boolean   :- bool type
+	- .true definition ingrained
+	- .false definition ingrained
+.array     :- vector array with definite type
+.map       :- map type with <h, k> type relation
+	- [ a=>b c=>d ]
+	- .oneof override
+.string    :- string type
+	- "abc"
+	- .iterable override
+
