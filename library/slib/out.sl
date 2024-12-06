@@ -11,7 +11,7 @@
    	: cr(.bool)::false \
 	  color(.oneof .AnsiColor)::white \
 	  text(.string)
-	.out : .text->.format : text->"{1}[{2}m{3}[{4}m" \
+	.out : text->.format : text->"{1}[{2}m{3}[{4}m" \
 				          f1->.AnsiEscape \
 				          f2->.local::color \
 				    	    f3->.local::text \
@@ -19,7 +19,7 @@
 	.begin stage should_carriage_return
 		.out : text->"\n"
 	.end should_carriage_return
-	.compare : a->.local::cr b->.false
+	.compare : a->.local::cr b->.true
 	.branch : equal->.true to->.should_carriage_return
 .end print
 
