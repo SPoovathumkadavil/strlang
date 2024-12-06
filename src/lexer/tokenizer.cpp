@@ -50,9 +50,6 @@ std::vector<Token> extract_tokens(std::string line) {
       break;
     }
 
-    // TODO: Check non-compliant (accepting) token types
-    // TODO: Check non-compliant (non-accepting) token types
-
     // alpha check
     if (utils::char_of_alphabet(c) || c == "_") {
       switch (processing) {
@@ -267,7 +264,6 @@ std::vector<Token> extract_tokens(std::string line) {
       default:
         break;
       }
-      // std::printf("Matched Conditional\n");
     } else if (processing == TokenType::NONE) {
       // todo: error out?
     }
